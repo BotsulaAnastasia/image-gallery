@@ -14,92 +14,39 @@
    padding: 10px;
 }
 
+.btn {
+   width: 100px;
+   height: 30px;
+   cursor: pointer;
+}
+
+.errorMessage {
+   color: red;
+   font-weight: 600;
+   margin: 10px;
+   text-align: center;
+   display: none;
+}
+
 .gallery {
    max-width: 1000px;
-   height: 100vh;
    margin: auto;
    padding: 0 10px;
 }
+
 .gallery-grid {
-   display: grid; 
- 
-   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-   grid-template-columns: 1fr 1fr 1fr;
-    
-   gap: 5px;
-   height: 100%;
-    
+   gap: 15px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
 }
-   
-#item-0 {
- 
-   background-color: #BD577B; 
-   grid-row-start: 1;
-   grid-column-start: 1;
- 
-   grid-row-end: 2;
-   grid-column-end: 2;
-    
-}
-#item-1 {
- 
-   background-color: #DDD5A9; 
-   grid-row-start: 1;
-   grid-column-start: 2;
- 
-   grid-row-end: 3;
-   grid-column-end: 4;
-    
-}
-#item-2 {
- 
-   background-color: #D5A57B; 
-   grid-row-start: 2;
-   grid-column-start: 1;
- 
-   grid-row-end: 4;
-   grid-column-end: 2;
-    
-}
- #item-3 {
- 
-   background-color: #675FFF; 
-   grid-row-start: 3;
-   grid-column-start: 2;
- 
-   grid-row-end: 4;
-   grid-column-end: 4;
-    
- }
-#item-4 {
- 
-   background-color: #A7A67A; 
-   grid-row-start: 4;
-   grid-column-start: 1;
- 
-   grid-row-end: 6;
-   grid-column-end: 3;
-    
- }
-#item-5 {
- 
-   background-color: #7B5BAE; 
-   grid-row-start: 4;
-   grid-column-start: 3;
- 
-   grid-row-end: 5;
-   grid-column-end: 4;
-    
- }
-#item-6 {
- 
-   background-color: #6EFC5A; 
-   grid-row-start: 5;
-   grid-column-start: 3;
- 
-   grid-row-end: 6;
-   grid-column-end: 4;
-    
+
+.gallery-column {
+   max-width: 300px;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   height: auto;
 }
 
 .footer {
