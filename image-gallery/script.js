@@ -88,3 +88,12 @@ searchBtn.addEventListener('click', function() {
         loadSearchImg(input.value);
     }
 });
+
+// Show images after push on Enter
+document.addEventListener('keydown', function(event) {
+    if(input.value != '') {
+        if (event.code == 'Enter') {
+            loadSearchImg(input.value);
+        }
+    }
+  });
