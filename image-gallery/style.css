@@ -14,8 +14,51 @@
    padding: 10px;
 }
 
+.search-input-wrapper {
+   display: flex;
+   align-items: center;
+}
+
+.search-input {
+   position: relative;
+   margin-right: 10px;
+}
+
+.input {
+   box-sizing: border-box;
+   border-radius: 20px;
+   padding: 8px 12px;
+}
+
+.cross-btn {
+   border: none;
+   cursor: pointer;
+   position: absolute;
+   top: 10px;
+   left: 165px;
+   width: 16px;
+   height: 16px;
+}
+
+.cross-btn::before, .cross-btn::after {
+   content: "";
+   position: absolute;
+   width: 14px;
+   height: 2px;
+   background: #4d4d4d;
+   left: 0;
+}
+
+.cross-btn::before {
+   transform: rotate(45deg) translateY(-1px);
+}
+
+.cross-btn::after {
+   transform: rotate(-45deg) translateX(1px);
+}
+
 .btn-search {
-   width: 100px;
+   width: 80px;
    height: 30px;
    cursor: pointer;
 }
@@ -42,7 +85,7 @@
 }
 
 .gallery-column {
-   max-width: 300px;
+   max-width: 315px;
    display: flex;
    flex-direction: column;
    gap: 15px;

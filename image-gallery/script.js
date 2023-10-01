@@ -96,4 +96,10 @@ document.addEventListener('keydown', function(event) {
             loadSearchImg(input.value);
         }
     }
-  });
+});
+
+// Clear input
+document.querySelector('.cross-btn').onclick = function(event) {
+    input.value = '';
+    input.focus();
+}
