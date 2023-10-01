@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
         <header>
             <div class="header-wrapper">
-                <h1>Unsplash API</h1>
+                <div class="title">
+                    <img src="./icons/photo-camera.svg" alt="photo-camera" width="50px">
+                    <h1>Gallery</h1>
+                </div>
                 <div class="search-input-wrapper">
                     <div class="search-input">
                         <input type="text" placeholder="Search..." class="input" autocomplete="off" autofocus>
@@ -30,16 +36,18 @@
         </div>
     </main>
     <footer class="footer">
-        <div class="link">
-            <a href="https://rs.school/js-stage0/" target="_blank">
-                <img src="./icons/rs_school_js.svg" alt="rs_school_icon">
-            </a>
-        </div>
-        <div>2023</div>
-        <div class="link">
-            <a href="https://github.com/BotsulaAnastasia" target="_blank">
-                <img src="./icons/github.png" alt="github_icon">
-            </a>
+        <div class="footer-wrapper">
+            <div class="link">
+                <a href="https://rs.school/js-stage0/" target="_blank">
+                    <img src="./icons/rs_school_js.svg" alt="rs_school_icon">
+                </a>
+            </div>
+            <div>2023</div>
+            <div class="link">
+                <a href="https://github.com/BotsulaAnastasia" target="_blank">
+                    <img src="./icons/github.png" alt="github_icon">
+                </a>
+            </div>
         </div>
     </footer>
     <script src="script.js"></script>
