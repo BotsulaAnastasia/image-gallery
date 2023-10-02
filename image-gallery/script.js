@@ -53,6 +53,8 @@ function showImages() {
         if ((index + 1) % 3 === 0) galleryColumnsArr[0].append(img);
         if ((index + 2) % 3 === 0) galleryColumnsArr[1].append(img);
         if ((index + 3) % 3 === 0) galleryColumnsArr[2].append(img);
+
+        img.setAttribute('onclick', 'currentImage(this.src)');
     });
 }
 
@@ -103,3 +105,29 @@ document.querySelector('.cross-btn').onclick = function(event) {
     input.value = '';
     input.focus();
 }
+
+// Modal box with full current image
+const modalBoxWrapper = document.createElement("div");
+const modalBoxContent = document.createElement("div");
+const modalBoxImg = document.createElement("img");
+
+modalBoxWrapper.classList.add("modalbox");
+modalBoxContent.classList.add("modalbox-content");
+
+modalBoxWrapper.appendChild(modalBoxContent);
+modalBoxContent.appendChild(modalBoxImg);
+
+document.body.appendChild(modalBoxWrapper);
+
+function currentImage(u) {
+    modalBoxWrapper.style.display = "block";
+    modalBoxImg.src = u;
+}
+
+// Close modal box
+window.addEventListener("click", (e) => {
+    const target = e.target.classList;
+    if (target.contains('modalbox')) {
+        modalBoxWrapper.style.display = "none";
+    }
+});
